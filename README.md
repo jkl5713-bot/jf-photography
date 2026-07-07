@@ -1,7 +1,9 @@
 # JF — Juan Flores Photo & Film
 
-Static portfolio site: no frameworks, no build step for the pages themselves —
-just HTML/CSS/JS plus two small Python tools for the image pipeline.
+Static portfolio site: no frameworks — HTML/CSS/JS plus small Python tools
+for the image pipeline and page generation.
+
+**Live:** https://jkl5713-bot.github.io/jf-photography/
 
 ## Run locally
 
@@ -11,47 +13,46 @@ python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
-## Deploy (free)
+## Deploy
 
-Drag the whole folder into **Netlify Drop** (app.netlify.com/drop), or push to
-GitHub and enable **GitHub Pages** / import into **Vercel**. Everything is
-static — no server needed.
+Pushing to `main` republishes GitHub Pages automatically (takes ~1 minute).
 
-## Before you launch — confirm these
+```
+git add -A && git commit -m "update" && git push
+```
 
-1. **Prices** on `investment.html`: the $500 Highlight Film package matches your
-   signed contract. The "from $175" portrait price is a **placeholder I made up
-   from market norms — set your real number** (search `PRICING NOTE` in the file).
-2. **FAA Part 107**: `aerial.html` says "Flights under FAA Part 107 rules".
-   If you hold a current Part 107 certificate, change it to
-   "FAA Part 107 certified remote pilot" (stronger). If not, get certified before
-   selling drone work — it's legally required for commercial flights.
-3. **Domain**: replace `https://YOUR-DOMAIN.com` in `robots.txt` and
-   `sitemap.xml`, and add `<link rel="canonical">` + absolute `og:image` URLs
-   once you know the domain.
-4. **Contact form**: wired to FormSubmit → jkl5713@gmail.com. The **first**
-   submission emails you an activation link — click it once and the form is live.
-   After you have a domain, add `<input type="hidden" name="_next"
-   value="https://your-domain/thanks.html">` inside the form for the custom
-   thank-you page.
-5. **Instagram**: no handle was on the SSD, so no social links are on the site.
-   Add them in the footer (`gen`erated into every page) when ready.
-6. **Jones College**: the sports page credits your Jones College Athletics work —
-   double-check you're OK naming them (research says collegiate credit is your
-   strongest local proof, but it's your relationship).
+## One thing left to activate
 
-## Swap / add photos later
+The inquiry form posts to FormSubmit → **jkl81694@gmail.com**. The FIRST
+submission emails that address an activation link — submit the form once and
+click it. After that, every inquiry lands in your inbox and the visitor is
+redirected to the thank-you page.
 
-1. Add entries to a manifest JSON like:
-   `[{"src": "/Volumes/T9/...jpg", "category": "seniors", "slug": "my-new-photo", "role": "gallery", "desc": "alt text"}]`
-2. Process: `python3 tools/process_images.py manifest.json`
-   (needs Pillow: `python3 -m venv venv && venv/bin/pip install pillow pillow-avif-plugin`,
-   then use `venv/bin/python`)
-3. Add the slug + caption to `tools/galleries.json` in whichever gallery you want.
-4. Rebuild: `python3 tools/build_galleries.py`
+## Pricing (set from 2026 market research — small-market MS comps)
 
-Images are generated as AVIF + JPEG at two widths with blur-up placeholders —
-never hand-edit the `<picture>` blocks between `<!-- GALLERY -->` markers.
+- Wedding Highlight Film $500 (matches your signed contract)
+- Wedding photography from $1,200 / photo+film bundle $1,600
+- Portrait sessions (seniors/couples/grads) from $250
+- Athlete sessions from $150 · game coverage from $125/game
+- Real-estate aerials from $125 · land/farm from $150 · events from $200
+
+Research positioning note: these are launch floors. After the first ~5–10
+booked jobs and reviews, local comps support raising seniors/couples to ~$350
+and weddings to $1,500–1,800 base.
+
+## Editing the site
+
+- **Page copy / structure:** edit `tools/gen_pages.py`, run
+  `python3 tools/gen_pages.py && python3 tools/build_galleries.py`.
+  (index.html is standalone — edit it directly.)
+- **Add/swap photos:**
+  1. Manifest entry: `[{"src": "/Volumes/T9/...jpg", "category": "seniors",
+     "slug": "my-photo", "role": "gallery", "desc": "alt text"}]`
+  2. `venv/bin/python tools/process_images.py manifest.json`
+     (venv: `python3 -m venv venv && venv/bin/pip install pillow pillow-avif-plugin`)
+  3. Add slug + caption to `tools/galleries.json`
+  4. `python3 tools/build_galleries.py`
+- Never hand-edit between `<!-- GALLERY -->` markers — the generator owns those.
 
 ## Structure
 
@@ -60,5 +61,5 @@ never hand-edit the `<picture>` blocks between `<!-- GALLERY -->` markers.
 - `about / investment / inquire / thanks .html`
 - `css/main.css` — design system (navy/gold/ivory, Fraunces + Cabinet Grotesk)
 - `js/main.js` — nav, cursor, reveals, preloader · `js/gallery.js` — lightbox
-- `tools/` — image pipeline + gallery generator
-- `assets/` — fonts (self-hosted), brand marks, processed images, drone video loop
+- `tools/` — image pipeline, gallery generator, page generator
+- `assets/` — fonts (self-hosted), brand marks, processed images, drone loop

@@ -171,9 +171,9 @@ gallery_page(
     extra='''  <section class="section wrap">
     <p class="eyebrow reveal">For athletes &amp; programs</p>
     <div class="tiers">
-      <div class="tier reveal"><h3>Game coverage</h3><ul><li>Full-game shooting, peak action + sidelines</li><li>Fast social-ready selects</li><li>Team gallery delivery</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
-      <div class="tier reveal" style="--d:.1s"><h3>Athlete sessions</h3><ul><li>Individual portraits in uniform, stadium or court</li><li>Banner &amp; signing-day graphics ready</li><li>Recruiting-profile friendly</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
-      <div class="tier reveal" style="--d:.2s"><h3>Season media</h3><ul><li>Multi-game packages for programs</li><li>Photo + video + drone in one crew</li><li>Consistent look all season</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
+      <div class="tier reveal"><h3>Game coverage</h3><p class="price">from $125 <small>PER GAME</small></p><ul><li>Full-game shooting, peak action + sidelines</li><li>Fast social-ready selects</li><li>Team gallery delivery</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
+      <div class="tier reveal" style="--d:.1s"><h3>Athlete sessions</h3><p class="price">from $150 <small>PER ATHLETE</small></p><ul><li>Individual portraits in uniform, stadium or court</li><li>Banner &amp; signing-day graphics ready</li><li>Recruiting-profile friendly</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
+      <div class="tier reveal" style="--d:.2s"><h3>Season media</h3><p class="price">custom <small>MULTI-GAME</small></p><ul><li>Multi-game packages for programs</li><li>Photo + video + drone in one crew</li><li>Consistent look all season</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
     </div>
   </section>
 ''')
@@ -209,9 +209,9 @@ aerial = head(
   <section class="wrap" style="padding-bottom:var(--section)">
     <p class="eyebrow reveal">Where a drone earns its keep</p>
     <div class="tiers">
-      <div class="tier reveal"><h3>Venues &amp; events</h3><ul><li>Wedding venues at dusk</li><li>Festivals, parades, game days</li><li>Establishing shots for films</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
-      <div class="tier reveal" style="--d:.1s"><h3>Land &amp; property</h3><ul><li>Farms, acreage and timberland</li><li>Real-estate listings</li><li>Construction progress</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
-      <div class="tier reveal" style="--d:.2s"><h3>Sports facilities</h3><ul><li>Stadium and complex flyovers</li><li>Hype-video aerials</li><li>Program media add-on</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
+      <div class="tier reveal"><h3>Venues &amp; events</h3><p class="price">from $200 <small>PER EVENT</small></p><ul><li>Wedding venues at dusk — add-on from $200</li><li>Festivals, parades, game days</li><li>Establishing shots for films</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
+      <div class="tier reveal" style="--d:.1s"><h3>Land &amp; property</h3><p class="price">from $125 <small>PER LISTING</small></p><ul><li>Real-estate listings from $125</li><li>Farms, acreage and timberland from $150</li><li>Construction progress</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
+      <div class="tier reveal" style="--d:.2s"><h3>Sports facilities</h3><p class="price">custom <small>PROGRAMS</small></p><ul><li>Stadium and complex flyovers</li><li>Hype-video aerials</li><li>Program media add-on</li></ul><a class="btn" href="inquire.html">Inquire</a></div>
     </div>
   </section>
 </main>
@@ -276,41 +276,51 @@ investment = head(
 
   <section class="section wrap">
     <p class="eyebrow reveal">Collections</p>
-    <!-- PRICING NOTE: the Wedding Highlight Film package matches the current signed contract terms.
-         The "from" prices on other collections are editable placeholders — confirm before launch. -->
+    <!-- PRICING: researched 2026 small-market MS rates (local comps: Hattiesburg/Petal
+         photographers, Droners.io MS/AL/LA listings). Film package = signed contract terms. -->
     <div class="tiers">
       <div class="tier reveal">
         <h3>The Highlight Film</h3>
-        <p class="price">$500 <small>WEDDINGS — MOST BOOKED</small></p>
+        <p class="price">$500 <small>WEDDING FILM</small></p>
         <ul>
-          <li>Up to 6 continuous hours of wedding-day coverage</li>
+          <li>Up to 6 continuous hours of coverage</li>
           <li>Cinematic 16:9 highlight film</li>
           <li>Vertical 9:16 cut for social</li>
-          <li>One round of revisions included</li>
-          <li>Delivered digitally in 3–4 weeks</li>
+          <li>One revision round · delivered in 3–4 weeks</li>
           <li>$250 refundable retainer holds your date</li>
+        </ul>
+        <a class="btn" href="inquire.html">Check my date</a>
+      </div>
+      <div class="tier reveal" style="--d:.1s">
+        <h3>Wedding photography</h3>
+        <p class="price">from $1,200 <small>PHOTO + FILM $1,600 — BEST VALUE</small></p>
+        <ul>
+          <li>Six hours of wedding-day photography</li>
+          <li>Fully edited online gallery with print rights</li>
+          <li>Add the Highlight Film for $400 — one storyteller, both crafts</li>
+          <li>Aerial coverage add-on from $200</li>
         </ul>
         <a class="btn btn--solid" href="inquire.html">Check my date</a>
       </div>
-      <div class="tier reveal" style="--d:.1s">
+      <div class="tier reveal" style="--d:.2s">
         <h3>Portrait sessions</h3>
-        <p class="price">from $175 <small>SENIORS · COUPLES · GRADS</small></p>
+        <p class="price">from $250 <small>SENIORS · COUPLES · GRADS</small></p>
         <ul>
-          <li>Golden-hour session, locations planned together</li>
-          <li>Relaxed direction — no stiff posing</li>
+          <li>60–90 minute golden-hour session</li>
+          <li>Locations planned together — no stiff posing</li>
           <li>Fully edited online gallery</li>
           <li>Print &amp; share rights included</li>
         </ul>
         <a class="btn" href="inquire.html">Inquire</a>
       </div>
-      <div class="tier reveal" style="--d:.2s">
+      <div class="tier reveal" style="--d:.3s">
         <h3>Sports &amp; aerial</h3>
-        <p class="price">custom <small>GAMES · SEASONS · FLIGHTS</small></p>
+        <p class="price">from $125 <small>GAMES · ATHLETES · FLIGHTS</small></p>
         <ul>
-          <li>Game and season coverage for programs</li>
-          <li>Individual athlete sessions</li>
-          <li>Drone photo &amp; 4K video, solo or add-on</li>
-          <li>Quoted by scope — answered within 24h</li>
+          <li>Athlete banner sessions from $150</li>
+          <li>Program game coverage from $125 per game</li>
+          <li>Real-estate aerials from $125 · land &amp; farms from $150</li>
+          <li>Event &amp; venue flyovers from $200</li>
         </ul>
         <a class="btn" href="inquire.html">Inquire</a>
       </div>
