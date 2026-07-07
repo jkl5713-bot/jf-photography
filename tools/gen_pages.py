@@ -20,6 +20,7 @@ def head(title, desc, fname=""):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
+<meta name="theme-color" content="#060f1b">
 <link rel="canonical" href="{page_url}">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
@@ -439,5 +440,23 @@ thanks = head(
 ''' + FOOTER
 open(os.path.join(ROOT, "thanks.html"), "w").write(thanks)
 print("wrote thanks.html")
+
+# ---------------- 404 ----------------
+notfound = head(
+    "Page Not Found | Juan Flores Photo &amp; Film",
+    "That page wandered out of frame.",
+    "404.html"
+) + "\n" + nav("") + '''
+<main id="main">
+  <div class="wrap page-hero" style="min-height:60svh">
+    <p class="eyebrow reveal">404</p>
+    <h1 class="reveal">Out of <em>frame</em>.</h1>
+    <p class="lede reveal" style="--d:.15s">That page doesn't exist — but the good stuff is one click away.</p>
+    <p class="mt-2 reveal" style="--d:.25s"><a class="btn btn--solid" href="index.html">Back to the work <span class="arrow">&rarr;</span></a></p>
+  </div>
+</main>
+''' + FOOTER
+open(os.path.join(ROOT, "404.html"), "w").write(notfound)
+print("wrote 404.html")
 
 print("all pages generated")
