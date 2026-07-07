@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jkl5713-bot.github.io/jf-photography/sitemap.xml
