@@ -23,6 +23,7 @@
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
 <header class="nav">
   <a class="nav__logo" href="index.html" aria-label="JF — home">
     <img src="assets/brand/jf-white.png" alt="JF monogram — Juan Flores Photo &amp; Film">
@@ -47,11 +48,13 @@
     <p class="eyebrow reveal">Inquire</p>
     <h1 class="reveal">Tell me <em>your story</em>.</h1>
     <p class="lede reveal" style="--d:.15s">A few details and you're done — I read every one of these myself and answer within 24 hours.</p>
+    <p class="avail reveal" style="--d:.25s"><span class="avail__dot" aria-hidden="true"></span><span data-avail></span></p>
   </div>
   <section class="wrap" style="padding-bottom:var(--section)">
     <form class="form reveal" action="https://formsubmit.co/jkl81694@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New inquiry — jf photo &amp; film website">
       <input type="hidden" name="_next" value="https://jkl5713-bot.github.io/jf-photography/thanks.html">
+      <input type="hidden" name="_autoresponse" value="Got it — your inquiry is in my inbox. I read every one of these myself and I'll reply within 24 hours, usually much faster. If your date is flexible, say so in your reply and I'll send options. — Juan, JF Photo &amp; Film">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div class="row">
         <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" required autocomplete="name"></div>
@@ -59,26 +62,27 @@
       </div>
       <div class="row">
         <div class="field"><label for="f-phone">Phone <span class="dim">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
-        <div class="field"><label for="f-type">What are we making?</label>
-          <select id="f-type" name="session_type" required>
-            <option value="" selected disabled>Choose one</option>
-            <option>Senior session</option>
-            <option>Couples / engagement</option>
-            <option>Wedding — photo</option>
-            <option>Wedding — film</option>
-            <option>Wedding — photo + film</option>
-            <option>Sports — athlete or program</option>
-            <option>Drone / aerial</option>
-            <option>Something else</option>
-          </select>
-        </div>
       </div>
+      <fieldset class="field" style="border:0">
+        <legend style="font-size:var(--text-xs);font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--paper-dim);margin-bottom:.6rem">What are we making?</legend>
+        <div class="pills">
+          <label><input type="radio" name="session_type" value="Senior session" required><span>Senior session</span></label>
+          <label><input type="radio" name="session_type" value="Couples / engagement"><span>Couples</span></label>
+          <label><input type="radio" name="session_type" value="Wedding — photo"><span>Wedding photo</span></label>
+          <label><input type="radio" name="session_type" value="Wedding — film"><span>Wedding film</span></label>
+          <label><input type="radio" name="session_type" value="Wedding — photo + film"><span>Photo + film</span></label>
+          <label><input type="radio" name="session_type" value="Sports"><span>Sports</span></label>
+          <label><input type="radio" name="session_type" value="Drone / aerial"><span>Aerial</span></label>
+          <label><input type="radio" name="session_type" value="Something else"><span>Something else</span></label>
+        </div>
+      </fieldset>
       <div class="row">
         <div class="field"><label for="f-date">Date (or best guess)</label><input id="f-date" name="preferred_date" type="text" placeholder="e.g. Oct 17, 2026"></div>
         <div class="field"><label for="f-hear">How'd you find me? <span class="dim">(optional)</span></label><input id="f-hear" name="heard_from" type="text"></div>
       </div>
       <div class="field"><label for="f-msg">Your story</label><textarea id="f-msg" name="message" placeholder="Venue, team, vision, questions — everything helps." required></textarea></div>
       <div>
+        <span class="assure" style="margin-bottom:1rem">Retainer fully refundable until 3 days out · one free date change</span>
         <button class="btn btn--solid" type="submit">Send it <span class="arrow">&rarr;</span></button>
         <p class="dim mt-2" style="font-size:var(--text-sm)">Replies within 24 hours — usually much faster. Prefer email? <a class="link-line" href="mailto:jkl81694@gmail.com">jkl81694@gmail.com</a> · or DM <a class="link-line" href="https://www.instagram.com/j.f.official" target="_blank" rel="noopener">@j.f.official</a></p>
       </div>

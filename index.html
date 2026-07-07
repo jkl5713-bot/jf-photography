@@ -16,6 +16,7 @@
 <link rel="apple-touch-icon" href="assets/brand/favicon.png">
 <link rel="preload" href="assets/fonts/fraunces-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/CabinetGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/avif" imagesrcset="assets/img/hero/golden-hour-tennis-serve-ellisville-ms-2400.avif 2400w, assets/img/hero/golden-hour-tennis-serve-ellisville-ms-1200.avif 1200w" imagesizes="100vw">
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js" defer></script>
@@ -39,6 +40,7 @@
 
 <div class="preloader" aria-hidden="true"><img src="assets/brand/jf-white.png" alt=""></div>
 
+<a class="skip" href="#main">Skip to content</a>
 <header class="nav">
   <a class="nav__logo" href="index.html" aria-label="JF — home">
     <img src="assets/brand/jf-white.png" alt="JF monogram — Juan Flores Photo &amp; Film">
@@ -118,11 +120,12 @@
       <span class="badge">Photo + video, one shooter</span>
       <span class="badge">Drone photo &amp; film</span>
     </div>
+    <p class="dim mt-2 reveal" style="font-size:var(--text-sm);letter-spacing:.04em">Portrait sessions from $250 · Wedding photography from $1,100 · Films from $700 · Aerial from $125 — <a class="link-line" href="pricing.html">see full pricing</a></p>
   </section>
 
   <!-- ============ COLLECTIONS ============ -->
   <section id="collections" class="section wrap">
-    <p class="eyebrow reveal">The collections</p>
+    <p class="eyebrow reveal"><span class="num">01–05</span> The collections</p>
     <div class="collections">
 
       <article class="col-card reveal">
@@ -134,7 +137,7 @@
     width="6000" height="4000" loading="lazy" decoding="async" alt="Senior laughing with a fresh-picked strawberry at the farm stand">
 </picture>
 <!-- /GALLERY:card-seniors -->
-          <span class="idx swash">Seniors</span>
+          <span class="idx swash">N° 01 · Seniors</span>
         </a>
         <div class="col-card__body">
           <h3>Seniors <em>&amp; grads</em></h3>
@@ -152,7 +155,7 @@
     width="6000" height="4000" loading="lazy" decoding="async" alt="Newlywed couple smiling together under the oaks — Petal, MS">
 </picture>
 <!-- /GALLERY:card-couples -->
-          <span class="idx swash">Couples</span>
+          <span class="idx swash">N° 02 · Couples</span>
         </a>
         <div class="col-card__body">
           <h3>Couples</h3>
@@ -170,7 +173,7 @@
     width="11584" height="7722" loading="lazy" decoding="async" alt="Bride and groom beaming shoulder to shoulder — Petal, MS wedding">
 </picture>
 <!-- /GALLERY:card-weddings -->
-          <span class="idx swash">Weddings</span>
+          <span class="idx swash">N° 03 · Weddings</span>
         </a>
         <div class="col-card__body">
           <h3>Weddings <em>&amp; films</em></h3>
@@ -188,7 +191,7 @@
     width="6000" height="4000" loading="lazy" decoding="async" alt="Quarterback cocked to throw under Friday-night lights">
 </picture>
 <!-- /GALLERY:card-sports -->
-          <span class="idx swash">Sports</span>
+          <span class="idx swash">N° 04 · Sports</span>
         </a>
         <div class="col-card__body">
           <h3>Sports</h3>
@@ -206,7 +209,8 @@
     width="5472" height="3648" loading="lazy" decoding="async" alt="Dawn aerial of a snow-buried alpine town — St. Moritz, Switzerland">
 </picture>
 <!-- /GALLERY:card-aerial -->
-          <span class="idx swash">Aerial</span>
+          <video class="card-vid" muted loop playsinline preload="none" data-hover-src="assets/video/aerial-loop.mp4" aria-hidden="true"></video>
+          <span class="idx swash">N° 05 · Aerial</span>
         </a>
         <div class="col-card__body">
           <h3>Aerial <em>drone</em></h3>

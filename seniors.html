@@ -16,6 +16,7 @@
 <link rel="apple-touch-icon" href="assets/brand/favicon.png">
 <link rel="preload" href="assets/fonts/fraunces-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/CabinetGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/avif" imagesrcset="assets/img/seniors/senior-portrait-golden-hour-backlit-2400.avif 2400w, assets/img/seniors/senior-portrait-golden-hour-backlit-1200.avif 1200w" imagesizes="100vw">
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js" defer></script>
@@ -23,6 +24,7 @@
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
 <header class="nav">
   <a class="nav__logo" href="index.html" aria-label="JF — home">
     <img src="assets/brand/jf-white.png" alt="JF monogram — Juan Flores Photo &amp; Film">
@@ -53,11 +55,11 @@
 <!-- /GALLERY:banner-seniors -->
   </section>
   <div class="wrap" style="padding-block:clamp(2.5rem,6vh,4rem)">
-    <p class="eyebrow reveal">Seniors &amp; grads</p>
+    <p class="eyebrow reveal"><span class="num">N° 01</span> Seniors &amp; grads</p>
     <h1 class="reveal" style="font-size:var(--text-2xl);max-width:16ch">Your year. <em>Your light.</em></h1>
     <p class="lede dim reveal mt-2" style="--d:.15s;font-size:var(--text-lg);max-width:48ch">This is the year everything changes — your session should feel like it. We plan looks and locations around you, chase the best hour of light, and build a gallery that looks like a magazine, not a yearbook.</p>
   </div>
-  <section class="wrap" style="padding-bottom:var(--section)">
+  <section id="frames" class="wrap" style="padding-bottom:var(--section)">
     <div class="masonry" data-lightbox>
       <!-- GALLERY:seniors -->
 <figure class="reveal" data-full="assets/img/seniors/senior-session-strawberry-farm-laugh-1600.jpg"
@@ -120,6 +122,7 @@
   </picture>
   <figcaption>Carlsbad, CA — Senior '24</figcaption>
 </figure>
+<aside class="interlude"><div class="wrap"><p class="eyebrow">From behind the camera</p><p class="interlude__line">Every session is planned around <em>one hour of light</em> — the hour comes first, the location follows.</p></div></aside>
 <figure class="reveal" data-full="assets/img/seniors/graduation-cap-raise-starkville-ms-1600.jpg"
   style="aspect-ratio:6000/4000;background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAAQABgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDskvIPOdA4J9q4rxHDcDUJJQrSJ1Bq9pl3BHLNukAyeM1ea9gYNvlQjFQ/eQmkcvpmqRRtslBQmisud4p9Uk+baoPBFFYzoK+gOx//2Q==')">
   <picture>
@@ -181,6 +184,17 @@
       <div class="step reveal" style="--d:.2s"><span class="n">03</span><h3>Your gallery</h3><p>Fully edited images delivered in an online gallery, ready for prints, announcements and the group chat.</p></div>
     </div>
   </section>
+  <a class="next-col" href="couples.html">
+    <picture>
+      <source type="image/avif" srcset="assets/img/couples/couple-park-portrait-petal-ms-2400.avif 2400w, assets/img/couples/couple-park-portrait-petal-ms-1200.avif 1200w" sizes="100vw">
+      <img src="assets/img/couples/couple-park-portrait-petal-ms-2400.jpg" srcset="assets/img/couples/couple-park-portrait-petal-ms-2400.jpg 2400w, assets/img/couples/couple-park-portrait-petal-ms-1200.jpg 1200w" sizes="100vw"
+        width="6000" height="4000" loading="lazy" decoding="async" alt="">
+    </picture>
+    <div class="next-col__text">
+      <p class="eyebrow">Next collection</p>
+      <h2>N° 02 · Couples <span class="arrow">&rarr;</span></h2>
+    </div>
+  </a>
 </main>
 
 <footer class="footer">

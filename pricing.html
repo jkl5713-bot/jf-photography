@@ -23,6 +23,7 @@
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
 <header class="nav">
   <a class="nav__logo" href="index.html" aria-label="JF — home">
     <img src="assets/brand/jf-white.png" alt="JF monogram — Juan Flores Photo &amp; Film">
@@ -47,6 +48,8 @@
     <p class="eyebrow reveal">Pricing</p>
     <h1 class="reveal">Priced like a person, <em>not a package machine</em>.</h1>
     <p class="lede reveal" style="--d:.15s">Every booking gets the same eye, the same care and the same turnaround promise. Here's where things start — your exact quote comes after we talk, and it never changes after we shake on it.</p>
+    <p class="avail reveal" style="--d:.25s"><span class="avail__dot" aria-hidden="true"></span><span data-avail></span></p>
+    <span class="assure reveal" style="--d:.3s">Retainer fully refundable until 3 days out · one free date change</span>
   </div>
 
   <section class="section wrap">
@@ -57,18 +60,20 @@
       <div class="tier reveal">
         <h3>The Highlight Film</h3>
         <p class="price">$700 <small>WEDDING FILM</small></p>
+        <p class="reframe">Hold your date for $250 — refundable</p>
         <ul>
           <li>Up to 6 continuous hours of coverage</li>
           <li>Cinematic 16:9 highlight film</li>
           <li>Vertical 9:16 cut for social</li>
           <li>One revision round · delivered in 3–4 weeks</li>
-          <li>$250 refundable retainer holds your date</li>
         </ul>
         <a class="btn" href="inquire.html">Check my date</a>
       </div>
-      <div class="tier reveal" style="--d:.1s">
+      <div class="tier tier--featured reveal" style="--d:.1s">
+        <span class="tier__badge">Most booked</span>
         <h3>Wedding photography</h3>
         <p class="price">from $1,100 <small>PHOTO + FILM $1,600 — BEST VALUE</small></p>
+        <p class="reframe">Hold your date for $250 — refundable</p>
         <ul>
           <li>Six hours of wedding-day photography</li>
           <li>Fully edited online gallery with print rights</li>
@@ -124,6 +129,20 @@
       <details class="reveal"><summary>How do we pay?</summary><p class="dim">Cash, check, Venmo, Zelle, Cash App, PayPal or Apple Pay. Retainer up front, balance due by the day of the event.</p></details>
     </div>
   </section>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Do you travel?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Hattiesburg, Laurel and Ellisville are home turf with no travel fee. Beyond that, simple mileage — and for the right story, anywhere."}},
+      {"@type": "Question", "name": "How far out should I book?", "acceptedAnswer": {"@type": "Answer", "text": "Weddings: as soon as you have a date — weekend bookings only, so Saturdays go fast. Senior sessions: 3-4 weeks ahead usually works."}},
+      {"@type": "Question", "name": "When do we get everything?", "acceptedAnswer": {"@type": "Answer", "text": "Three to four weeks after your date, delivered digitally through an online gallery or download. Sneak selects usually land sooner."}},
+      {"@type": "Question", "name": "What if we need to change the date?", "acceptedAnswer": {"@type": "Answer", "text": "One free date change with at least 14 days written notice. The retainer is refundable except for cancellations within 3 days of the event."}},
+      {"@type": "Question", "name": "Can you do photo AND video?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — photo, film and drone in a single booking, one consistent look, one storyteller."}},
+      {"@type": "Question", "name": "How do we pay?", "acceptedAnswer": {"@type": "Answer", "text": "Cash, check, Venmo, Zelle, Cash App, PayPal or Apple Pay. Retainer up front, balance due by the day of the event."}}
+    ]
+  }
+  </script>
 </main>
 <footer class="footer">
   <div class="wrap">

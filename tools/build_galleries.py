@@ -60,7 +60,15 @@ def build(gid):
     if entry.get("mode") == "pic":
         return picture(entry["slug"], entry.get("sizes", "100vw"),
                        entry.get("eager", False), entry.get("alt"))
-    return "\n".join(figure(i) for i in entry["items"])
+    parts = [figure(i) for i in entry["items"]]
+    inter = entry.get("interlude")
+    if inter:
+        block = ('<aside class="interlude"><div class="wrap">'
+                 f'<p class="eyebrow">{inter["eyebrow"]}</p>'
+                 f'<p class="interlude__line">{inter["line"]}</p>'
+                 '</div></aside>')
+        parts.insert(min(inter.get("after", 8), len(parts)), block)
+    return "\n".join(parts)
 
 
 def main():

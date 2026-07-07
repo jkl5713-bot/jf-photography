@@ -1,101 +1,394 @@
 {
-  "home-hero": { "mode": "pic", "slug": "golden-hour-tennis-serve-ellisville-ms", "sizes": "100vw", "eager": true,
-    "alt": "Golden-hour serve toss at a Jones College tennis match in Ellisville, Mississippi" },
-
-  "card-seniors": { "mode": "pic", "slug": "senior-session-strawberry-farm-laugh", "sizes": "(max-width: 800px) 96vw, 55vw" },
-  "card-couples": { "mode": "pic", "slug": "couple-park-portrait-petal-ms", "sizes": "(max-width: 800px) 96vw, 55vw" },
-  "card-weddings": { "mode": "pic", "slug": "bride-groom-portrait-petal-ms", "sizes": "(max-width: 800px) 96vw, 55vw" },
-  "card-sports": { "mode": "pic", "slug": "college-football-quarterback-friday-night", "sizes": "(max-width: 800px) 96vw, 55vw" },
-  "card-aerial": { "mode": "pic", "slug": "aerial-st-moritz-dawn-alps", "sizes": "(max-width: 800px) 96vw, 55vw" },
-
-  "banner-seniors": { "mode": "pic", "slug": "senior-portrait-golden-hour-backlit", "sizes": "100vw", "eager": true },
-  "banner-couples": { "mode": "pic", "slug": "couple-park-portrait-petal-ms", "sizes": "100vw", "eager": true },
-  "banner-weddings": { "mode": "pic", "slug": "bride-groom-portrait-petal-ms", "sizes": "100vw", "eager": true },
-  "banner-sports": { "mode": "pic", "slug": "college-tennis-forehand-jones-college", "sizes": "100vw", "eager": true },
-  "banner-about": { "mode": "pic", "slug": "marching-band-golden-hour", "sizes": "100vw", "eager": true },
-
-  "home-strip": { "mode": "figures", "items": [
-    { "slug": "college-tennis-airborne-serve", "caption": "Ellisville, MS — Tennis '26", "sizes": "60vh" },
-    { "slug": "senior-portrait-golden-hour-backlit", "caption": "Carlsbad, CA — Senior '24", "sizes": "60vh" },
-    { "slug": "wedding-reception-shoe-game", "caption": "Petal, MS — Wedding '26", "sizes": "60vh" },
-    { "slug": "aerial-rome-palatine-golden-hour", "caption": "Rome, Italy — Aerial '22", "sizes": "60vh" },
-    { "slug": "college-football-field-storm-entrance", "caption": "Ellisville, MS — Football '24", "sizes": "60vh" },
-    { "slug": "wedding-first-dance-kiss", "caption": "Petal, MS — Wedding '26", "sizes": "60vh" },
-    { "slug": "beach-surf-laugh", "caption": "Atlantic Coast — Lifestyle '21", "sizes": "60vh" },
-    { "slug": "aerial-homecoming-main-street-ellisville-ms", "caption": "Ellisville, MS — Aerial '24", "sizes": "60vh" }
-  ]},
-
-  "seniors": { "mode": "figures", "items": [
-    { "slug": "senior-session-strawberry-farm-laugh", "caption": "Carlsbad, CA — Senior '24" },
-    { "slug": "senior-portrait-strawberry-field-boots", "caption": "Carlsbad, CA — Senior '24" },
-    { "slug": "senior-editorial-roadside-sign", "caption": "Carlsbad, CA — Senior '24" },
-    { "slug": "graduation-portrait-chapel-steps-starkville-ms", "caption": "Starkville, MS — Grad '22" },
-    { "slug": "senior-portrait-daisies-stone-wall", "caption": "Balboa Park, CA — Senior '24" },
-    { "slug": "senior-session-berry-picking", "caption": "Carlsbad, CA — Senior '24" },
-    { "slug": "graduation-cap-raise-starkville-ms", "caption": "Starkville, MS — Grad '22" },
-    { "slug": "senior-portrait-park-candid", "caption": "Balboa Park, CA — Senior '24" },
-    { "slug": "senior-session-heart-mirror", "caption": "Carlsbad, CA — Senior '24" },
-    { "slug": "graduation-portrait-campus-starkville-ms", "caption": "Starkville, MS — Grad '22" },
-    { "slug": "senior-portrait-campus-bench", "caption": "Campus session — Summer '23" }
-  ]},
-
-  "couples": { "mode": "figures", "items": [
-    { "slug": "wedding-first-dance-kiss", "caption": "Petal, MS — First dance '26" },
-    { "slug": "bride-groom-portrait-petal-ms", "caption": "Petal, MS — A &amp; C '26" },
-    { "slug": "wedding-grand-entrance-bouquet", "caption": "Petal, MS — Grand entrance '26" },
-    { "slug": "wedding-first-dance-guests", "caption": "Petal, MS — Reception '26" }
-  ]},
-
-  "weddings": { "mode": "figures", "items": [
-    { "slug": "wedding-party-kiss-petal-ms", "caption": "Petal, MS — A &amp; C '26" },
-    { "slug": "wedding-grand-entrance-bouquet", "caption": "Petal, MS — Grand entrance" },
-    { "slug": "wedding-reception-shoe-game", "caption": "Petal, MS — Shoe game" },
-    { "slug": "wedding-first-dance-kiss", "caption": "Petal, MS — First dance" },
-    { "slug": "wedding-party-formal-church", "caption": "Petal, MS — Wedding party" },
-    { "slug": "wedding-first-dance-guests", "caption": "Petal, MS — Reception" },
-    { "slug": "wedding-photo-booth-fun", "caption": "Petal, MS — Photo booth" },
-    { "slug": "wedding-family-formal-reception", "caption": "Petal, MS — Family formal" },
-    { "slug": "wedding-venue-aerial-dusk-mississippi", "caption": "Mississippi — The venue from above" }
-  ]},
-
-  "sports": { "mode": "figures", "items": [
-    { "slug": "college-tennis-airborne-serve", "caption": "Jones College Tennis '26" },
-    { "slug": "college-football-quarterback-friday-night", "caption": "Bobcats Football '24" },
-    { "slug": "college-soccer-sprint-duel-ellisville-ms", "caption": "Bobcats Soccer '24" },
-    { "slug": "college-tennis-overhead-smash", "caption": "Jones College Tennis '26" },
-    { "slug": "college-soccer-corner-flag-dusk", "caption": "Bobcats Soccer '24" },
-    { "slug": "college-tennis-golden-hour-serve-prep", "caption": "Jones College Tennis '26" },
-    { "slug": "college-football-field-storm-entrance", "caption": "Bobcats Football '24" },
-    { "slug": "college-tennis-jump-followthrough", "caption": "Jones College Tennis '26" },
-    { "slug": "college-soccer-threading-defenders", "caption": "Bobcats Soccer '24" },
-    { "slug": "college-tennis-forehand-windup", "caption": "Jones College Tennis '26" },
-    { "slug": "college-soccer-strike-top-of-kick", "caption": "Bobcats Soccer '24" },
-    { "slug": "college-tennis-doubles-net-play", "caption": "Jones College Tennis '26" },
-    { "slug": "college-soccer-free-kick-wall", "caption": "Bobcats Soccer '24" },
-    { "slug": "college-tennis-net-volley", "caption": "Jones College Tennis '26" },
-    { "slug": "college-soccer-attack-through-goal-frame", "caption": "Bobcats Soccer '24" },
-    { "slug": "college-tennis-team-huddle", "caption": "Jones College Tennis '26" },
-    { "slug": "college-football-sideline-night", "caption": "Bobcats Football '24" }
-  ]},
-
-  "aerial": { "mode": "figures", "items": [
-    { "slug": "aerial-st-moritz-dawn-alps", "caption": "St. Moritz, Switzerland" },
-    { "slug": "aerial-jones-college-stadium-ellisville-ms", "caption": "Ellisville, MS — Bobcat Stadium" },
-    { "slug": "aerial-rome-palatine-golden-hour", "caption": "Rome, Italy" },
-    { "slug": "aerial-amsterdam-royal-palace", "caption": "Amsterdam, Netherlands" },
-    { "slug": "aerial-homecoming-main-street-ellisville-ms", "caption": "Ellisville, MS — Homecoming" },
-    { "slug": "aerial-amsterdam-canals", "caption": "Amsterdam, Netherlands" },
-    { "slug": "wedding-venue-aerial-dusk-mississippi", "caption": "Mississippi — Wedding venue at dusk" },
-    { "slug": "aerial-amsterdam-museumplein", "caption": "Amsterdam, Netherlands" },
-    { "slug": "aerial-homecoming-parade-oaks", "caption": "Ellisville, MS — Homecoming parade" }
-  ]},
-
-  "about-strip": { "mode": "figures", "items": [
-    { "slug": "marching-band-golden-hour", "caption": "Ellisville, MS — Game day", "sizes": "50vh" },
-    { "slug": "concert-frontman-red-haze", "caption": "Live music '23", "sizes": "50vh" },
-    { "slug": "colosseum-interior-rome", "caption": "Rome, Italy '22", "sizes": "50vh" },
-    { "slug": "frenchie-forest-road", "caption": "Every client matters", "sizes": "50vh" },
-    { "slug": "vegas-strip-fashion", "caption": "Las Vegas, NV '21", "sizes": "50vh" },
-    { "slug": "beach-surf-laugh", "caption": "Atlantic Coast '21", "sizes": "50vh" }
-  ]}
+ "home-hero": {
+  "mode": "pic",
+  "slug": "golden-hour-tennis-serve-ellisville-ms",
+  "sizes": "100vw",
+  "eager": true,
+  "alt": "Golden-hour serve toss at a Jones College tennis match in Ellisville, Mississippi"
+ },
+ "card-seniors": {
+  "mode": "pic",
+  "slug": "senior-session-strawberry-farm-laugh",
+  "sizes": "(max-width: 800px) 96vw, 55vw"
+ },
+ "card-couples": {
+  "mode": "pic",
+  "slug": "couple-park-portrait-petal-ms",
+  "sizes": "(max-width: 800px) 96vw, 55vw"
+ },
+ "card-weddings": {
+  "mode": "pic",
+  "slug": "bride-groom-portrait-petal-ms",
+  "sizes": "(max-width: 800px) 96vw, 55vw"
+ },
+ "card-sports": {
+  "mode": "pic",
+  "slug": "college-football-quarterback-friday-night",
+  "sizes": "(max-width: 800px) 96vw, 55vw"
+ },
+ "card-aerial": {
+  "mode": "pic",
+  "slug": "aerial-st-moritz-dawn-alps",
+  "sizes": "(max-width: 800px) 96vw, 55vw"
+ },
+ "banner-seniors": {
+  "mode": "pic",
+  "slug": "senior-portrait-golden-hour-backlit",
+  "sizes": "100vw",
+  "eager": true
+ },
+ "banner-couples": {
+  "mode": "pic",
+  "slug": "couple-park-portrait-petal-ms",
+  "sizes": "100vw",
+  "eager": true
+ },
+ "banner-weddings": {
+  "mode": "pic",
+  "slug": "bride-groom-portrait-petal-ms",
+  "sizes": "100vw",
+  "eager": true
+ },
+ "banner-sports": {
+  "mode": "pic",
+  "slug": "college-tennis-forehand-jones-college",
+  "sizes": "100vw",
+  "eager": true
+ },
+ "banner-about": {
+  "mode": "pic",
+  "slug": "marching-band-golden-hour",
+  "sizes": "100vw",
+  "eager": true
+ },
+ "home-strip": {
+  "mode": "figures",
+  "items": [
+   {
+    "slug": "college-tennis-airborne-serve",
+    "caption": "Ellisville, MS \u2014 Tennis '26",
+    "sizes": "60vh"
+   },
+   {
+    "slug": "senior-portrait-golden-hour-backlit",
+    "caption": "Carlsbad, CA \u2014 Senior '24",
+    "sizes": "60vh"
+   },
+   {
+    "slug": "wedding-reception-shoe-game",
+    "caption": "Petal, MS \u2014 Wedding '26",
+    "sizes": "60vh"
+   },
+   {
+    "slug": "aerial-rome-palatine-golden-hour",
+    "caption": "Rome, Italy \u2014 Aerial '22",
+    "sizes": "60vh"
+   },
+   {
+    "slug": "college-football-field-storm-entrance",
+    "caption": "Ellisville, MS \u2014 Football '24",
+    "sizes": "60vh"
+   },
+   {
+    "slug": "wedding-first-dance-kiss",
+    "caption": "Petal, MS \u2014 Wedding '26",
+    "sizes": "60vh"
+   },
+   {
+    "slug": "beach-surf-laugh",
+    "caption": "Atlantic Coast \u2014 Lifestyle '21",
+    "sizes": "60vh"
+   },
+   {
+    "slug": "aerial-homecoming-main-street-ellisville-ms",
+    "caption": "Ellisville, MS \u2014 Aerial '24",
+    "sizes": "60vh"
+   }
+  ]
+ },
+ "seniors": {
+  "mode": "figures",
+  "items": [
+   {
+    "slug": "senior-session-strawberry-farm-laugh",
+    "caption": "Carlsbad, CA \u2014 Senior '24"
+   },
+   {
+    "slug": "senior-portrait-strawberry-field-boots",
+    "caption": "Carlsbad, CA \u2014 Senior '24"
+   },
+   {
+    "slug": "senior-editorial-roadside-sign",
+    "caption": "Carlsbad, CA \u2014 Senior '24"
+   },
+   {
+    "slug": "graduation-portrait-chapel-steps-starkville-ms",
+    "caption": "Starkville, MS \u2014 Grad '22"
+   },
+   {
+    "slug": "senior-portrait-daisies-stone-wall",
+    "caption": "Balboa Park, CA \u2014 Senior '24"
+   },
+   {
+    "slug": "senior-session-berry-picking",
+    "caption": "Carlsbad, CA \u2014 Senior '24"
+   },
+   {
+    "slug": "graduation-cap-raise-starkville-ms",
+    "caption": "Starkville, MS \u2014 Grad '22"
+   },
+   {
+    "slug": "senior-portrait-park-candid",
+    "caption": "Balboa Park, CA \u2014 Senior '24"
+   },
+   {
+    "slug": "senior-session-heart-mirror",
+    "caption": "Carlsbad, CA \u2014 Senior '24"
+   },
+   {
+    "slug": "graduation-portrait-campus-starkville-ms",
+    "caption": "Starkville, MS \u2014 Grad '22"
+   },
+   {
+    "slug": "senior-portrait-campus-bench",
+    "caption": "Campus session \u2014 Summer '23"
+   }
+  ],
+  "interlude": {
+   "after": 6,
+   "eyebrow": "From behind the camera",
+   "line": "Every session is planned around <em>one hour of light</em> \u2014 the hour comes first, the location follows."
+  }
+ },
+ "couples": {
+  "mode": "figures",
+  "items": [
+   {
+    "slug": "wedding-first-dance-kiss",
+    "caption": "Petal, MS \u2014 First dance '26"
+   },
+   {
+    "slug": "bride-groom-portrait-petal-ms",
+    "caption": "Petal, MS \u2014 A &amp; C '26"
+   },
+   {
+    "slug": "wedding-grand-entrance-bouquet",
+    "caption": "Petal, MS \u2014 Grand entrance '26"
+   },
+   {
+    "slug": "wedding-first-dance-guests",
+    "caption": "Petal, MS \u2014 Reception '26"
+   }
+  ],
+  "interlude": {
+   "after": 2,
+   "eyebrow": "From behind the camera",
+   "line": "Golden hour, gentle direction \u2014 the frames between the poses are <em>the ones you'll keep</em>."
+  }
+ },
+ "weddings": {
+  "mode": "figures",
+  "items": [
+   {
+    "slug": "wedding-party-kiss-petal-ms",
+    "caption": "Petal, MS \u2014 A &amp; C '26"
+   },
+   {
+    "slug": "wedding-grand-entrance-bouquet",
+    "caption": "Petal, MS \u2014 Grand entrance"
+   },
+   {
+    "slug": "wedding-reception-shoe-game",
+    "caption": "Petal, MS \u2014 Shoe game"
+   },
+   {
+    "slug": "wedding-first-dance-kiss",
+    "caption": "Petal, MS \u2014 First dance"
+   },
+   {
+    "slug": "wedding-party-formal-church",
+    "caption": "Petal, MS \u2014 Wedding party"
+   },
+   {
+    "slug": "wedding-first-dance-guests",
+    "caption": "Petal, MS \u2014 Reception"
+   },
+   {
+    "slug": "wedding-photo-booth-fun",
+    "caption": "Petal, MS \u2014 Photo booth"
+   },
+   {
+    "slug": "wedding-family-formal-reception",
+    "caption": "Petal, MS \u2014 Family formal"
+   },
+   {
+    "slug": "wedding-venue-aerial-dusk-mississippi",
+    "caption": "Mississippi \u2014 The venue from above"
+   }
+  ],
+  "interlude": {
+   "after": 5,
+   "eyebrow": "From behind the camera",
+   "line": "One storyteller for photo and film \u2014 <em>the moment</em> never has to choose a camera."
+  }
+ },
+ "sports": {
+  "mode": "figures",
+  "items": [
+   {
+    "slug": "college-tennis-airborne-serve",
+    "caption": "Jones College Tennis '26"
+   },
+   {
+    "slug": "college-football-quarterback-friday-night",
+    "caption": "Bobcats Football '24"
+   },
+   {
+    "slug": "college-soccer-sprint-duel-ellisville-ms",
+    "caption": "Bobcats Soccer '24"
+   },
+   {
+    "slug": "college-tennis-overhead-smash",
+    "caption": "Jones College Tennis '26"
+   },
+   {
+    "slug": "college-soccer-corner-flag-dusk",
+    "caption": "Bobcats Soccer '24"
+   },
+   {
+    "slug": "college-tennis-golden-hour-serve-prep",
+    "caption": "Jones College Tennis '26"
+   },
+   {
+    "slug": "college-football-field-storm-entrance",
+    "caption": "Bobcats Football '24"
+   },
+   {
+    "slug": "college-tennis-jump-followthrough",
+    "caption": "Jones College Tennis '26"
+   },
+   {
+    "slug": "college-soccer-threading-defenders",
+    "caption": "Bobcats Soccer '24"
+   },
+   {
+    "slug": "college-tennis-forehand-windup",
+    "caption": "Jones College Tennis '26"
+   },
+   {
+    "slug": "college-soccer-strike-top-of-kick",
+    "caption": "Bobcats Soccer '24"
+   },
+   {
+    "slug": "college-tennis-doubles-net-play",
+    "caption": "Jones College Tennis '26"
+   },
+   {
+    "slug": "college-soccer-free-kick-wall",
+    "caption": "Bobcats Soccer '24"
+   },
+   {
+    "slug": "college-tennis-net-volley",
+    "caption": "Jones College Tennis '26"
+   },
+   {
+    "slug": "college-soccer-attack-through-goal-frame",
+    "caption": "Bobcats Soccer '24"
+   },
+   {
+    "slug": "college-tennis-team-huddle",
+    "caption": "Jones College Tennis '26"
+   },
+   {
+    "slug": "college-football-sideline-night",
+    "caption": "Bobcats Football '24"
+   }
+  ],
+  "interlude": {
+   "after": 8,
+   "eyebrow": "From behind the camera",
+   "line": "Learn the play before you frame it \u2014 that's how you're on the right sideline <em>when the run breaks</em>."
+  }
+ },
+ "aerial": {
+  "mode": "figures",
+  "items": [
+   {
+    "slug": "aerial-st-moritz-dawn-alps",
+    "caption": "St. Moritz, Switzerland"
+   },
+   {
+    "slug": "aerial-jones-college-stadium-ellisville-ms",
+    "caption": "Ellisville, MS \u2014 Bobcat Stadium"
+   },
+   {
+    "slug": "aerial-rome-palatine-golden-hour",
+    "caption": "Rome, Italy"
+   },
+   {
+    "slug": "aerial-amsterdam-royal-palace",
+    "caption": "Amsterdam, Netherlands"
+   },
+   {
+    "slug": "aerial-homecoming-main-street-ellisville-ms",
+    "caption": "Ellisville, MS \u2014 Homecoming"
+   },
+   {
+    "slug": "aerial-amsterdam-canals",
+    "caption": "Amsterdam, Netherlands"
+   },
+   {
+    "slug": "wedding-venue-aerial-dusk-mississippi",
+    "caption": "Mississippi \u2014 Wedding venue at dusk"
+   },
+   {
+    "slug": "aerial-amsterdam-museumplein",
+    "caption": "Amsterdam, Netherlands"
+   },
+   {
+    "slug": "aerial-homecoming-parade-oaks",
+    "caption": "Ellisville, MS \u2014 Homecoming parade"
+   }
+  ],
+  "interlude": {
+   "after": 5,
+   "eyebrow": "From behind the camera",
+   "line": "Licensed, insured, and flown slow \u2014 <em>cinematic</em> is a speed, not a filter."
+  }
+ },
+ "about-strip": {
+  "mode": "figures",
+  "items": [
+   {
+    "slug": "marching-band-golden-hour",
+    "caption": "Ellisville, MS \u2014 Game day",
+    "sizes": "50vh"
+   },
+   {
+    "slug": "concert-frontman-red-haze",
+    "caption": "Live music '23",
+    "sizes": "50vh"
+   },
+   {
+    "slug": "colosseum-interior-rome",
+    "caption": "Rome, Italy '22",
+    "sizes": "50vh"
+   },
+   {
+    "slug": "frenchie-forest-road",
+    "caption": "Every client matters",
+    "sizes": "50vh"
+   },
+   {
+    "slug": "vegas-strip-fashion",
+    "caption": "Las Vegas, NV '21",
+    "sizes": "50vh"
+   },
+   {
+    "slug": "beach-surf-laugh",
+    "caption": "Atlantic Coast '21",
+    "sizes": "50vh"
+   }
+  ]
+ }
 }

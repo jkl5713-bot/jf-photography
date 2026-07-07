@@ -16,6 +16,7 @@
 <link rel="apple-touch-icon" href="assets/brand/favicon.png">
 <link rel="preload" href="assets/fonts/fraunces-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/CabinetGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/avif" imagesrcset="assets/img/weddings/bride-groom-portrait-petal-ms-2400.avif 2400w, assets/img/weddings/bride-groom-portrait-petal-ms-1200.avif 1200w" imagesizes="100vw">
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js" defer></script>
@@ -23,6 +24,7 @@
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
 <header class="nav">
   <a class="nav__logo" href="index.html" aria-label="JF — home">
     <img src="assets/brand/jf-white.png" alt="JF monogram — Juan Flores Photo &amp; Film">
@@ -53,11 +55,11 @@
 <!-- /GALLERY:banner-weddings -->
   </section>
   <div class="wrap" style="padding-block:clamp(2.5rem,6vh,4rem)">
-    <p class="eyebrow reveal">Weddings &amp; films</p>
+    <p class="eyebrow reveal"><span class="num">N° 03</span> Weddings &amp; films</p>
     <h1 class="reveal" style="font-size:var(--text-2xl);max-width:16ch">Told honestly, <em>kept forever</em>.</h1>
     <p class="lede dim reveal mt-2" style="--d:.15s;font-size:var(--text-lg);max-width:48ch">One storyteller for photo and film means nobody misses the moment — the shoe game, the ugly-cry toast, your grandmother's hands during the prayer. Highlight film in 16:9 plus a vertical cut ready for the group chat.</p>
   </div>
-  <section class="wrap" style="padding-bottom:var(--section)">
+  <section id="frames" class="wrap" style="padding-bottom:var(--section)">
     <div class="masonry" data-lightbox>
       <!-- GALLERY:weddings -->
 <figure class="reveal" data-full="assets/img/weddings/wedding-party-kiss-petal-ms-1600.jpg"
@@ -110,6 +112,7 @@
   </picture>
   <figcaption>Petal, MS — Wedding party</figcaption>
 </figure>
+<aside class="interlude"><div class="wrap"><p class="eyebrow">From behind the camera</p><p class="interlude__line">One storyteller for photo and film — <em>the moment</em> never has to choose a camera.</p></div></aside>
 <figure class="reveal" data-full="assets/img/weddings/wedding-first-dance-guests-1600.jpg"
   style="aspect-ratio:6000/4000;background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAAQABgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwChOZQyn5Rg8irY3+UCgOPasyaYSDPRh1FW7XWWhthmMELwawcTpvYjlkZpvKwenWipbu4jZVm2gKwzxRRyiuf/2Q==')">
   <picture>
@@ -158,9 +161,27 @@
       <p class="eyebrow reveal">The film</p>
       <h2 class="reveal" style="font-size:var(--text-xl);max-width:26ch">Every collection includes a cinematic <em>highlight film</em> — and a vertical cut for the feed.</h2>
       <p class="mt-2 reveal" style="--d:.1s">Up to six continuous hours of coverage, one round of revisions, delivered digitally in three to four weeks. Add-ons: extended coverage, a full start-to-finish ceremony film, or the raw footage.</p>
+      <!-- WATCH-THE-FILM: upload your best highlight film to YouTube (unlisted is fine),
+           then uncomment and set data-yt to the video id. The player only loads on click.
+      <div class="film-embed reveal mt-4" data-yt="VIDEO_ID" role="button" tabindex="0" aria-label="Play the highlight film">
+        <img src="assets/video/aerial-loop-poster.jpg" alt="" loading="lazy" decoding="async">
+        <span class="film-embed__play">Play the film</span>
+      </div>
+      -->
       <p class="mt-2 reveal" style="--d:.2s"><a class="btn" href="pricing.html">See wedding collections <span class="arrow">&rarr;</span></a></p>
     </div>
   </section>
+  <a class="next-col" href="sports.html">
+    <picture>
+      <source type="image/avif" srcset="assets/img/sports/college-football-quarterback-friday-night-2400.avif 2400w, assets/img/sports/college-football-quarterback-friday-night-1200.avif 1200w" sizes="100vw">
+      <img src="assets/img/sports/college-football-quarterback-friday-night-2400.jpg" srcset="assets/img/sports/college-football-quarterback-friday-night-2400.jpg 2400w, assets/img/sports/college-football-quarterback-friday-night-1200.jpg 1200w" sizes="100vw"
+        width="6000" height="4000" loading="lazy" decoding="async" alt="">
+    </picture>
+    <div class="next-col__text">
+      <p class="eyebrow">Next collection</p>
+      <h2>N° 04 · Sports <span class="arrow">&rarr;</span></h2>
+    </div>
+  </a>
 </main>
 
 <footer class="footer">

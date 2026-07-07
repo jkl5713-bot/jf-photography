@@ -16,6 +16,7 @@
 <link rel="apple-touch-icon" href="assets/brand/favicon.png">
 <link rel="preload" href="assets/fonts/fraunces-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/CabinetGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/avif" imagesrcset="assets/img/couples/couple-park-portrait-petal-ms-2400.avif 2400w, assets/img/couples/couple-park-portrait-petal-ms-1200.avif 1200w" imagesizes="100vw">
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js" defer></script>
@@ -23,6 +24,7 @@
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
 <header class="nav">
   <a class="nav__logo" href="index.html" aria-label="JF — home">
     <img src="assets/brand/jf-white.png" alt="JF monogram — Juan Flores Photo &amp; Film">
@@ -53,11 +55,11 @@
 <!-- /GALLERY:banner-couples -->
   </section>
   <div class="wrap" style="padding-block:clamp(2.5rem,6vh,4rem)">
-    <p class="eyebrow reveal">Couples</p>
+    <p class="eyebrow reveal"><span class="num">N° 02</span> Couples</p>
     <h1 class="reveal" style="font-size:var(--text-2xl);max-width:16ch">Two people, <em>zero posing</em>.</h1>
     <p class="lede dim reveal mt-2" style="--d:.15s;font-size:var(--text-lg);max-width:48ch">Engagements, anniversaries, or no reason at all. I'll put you somewhere beautiful at the right hour and keep you moving, laughing and close — the frames take care of themselves.</p>
   </div>
-  <section class="wrap" style="padding-bottom:var(--section)">
+  <section id="frames" class="wrap" style="padding-bottom:var(--section)">
     <div class="masonry" data-lightbox>
       <!-- GALLERY:couples -->
 <figure class="reveal" data-full="assets/img/weddings/wedding-first-dance-kiss-1600.jpg"
@@ -80,6 +82,7 @@
   </picture>
   <figcaption>Petal, MS — A &amp; C '26</figcaption>
 </figure>
+<aside class="interlude"><div class="wrap"><p class="eyebrow">From behind the camera</p><p class="interlude__line">Golden hour, gentle direction — the frames between the poses are <em>the ones you'll keep</em>.</p></div></aside>
 <figure class="reveal" data-full="assets/img/weddings/wedding-grand-entrance-bouquet-1600.jpg"
   style="aspect-ratio:11674/7782;background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAAQABgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwBYZrRijK4AboK0p5FjjiEoAjPT3rD0/QZAY/MkOAa3NSiYRQxhC6gYJFRZGlzN1SS3Ykhhmiq91Zxhi21lYnPJoqUgbP/Z')">
   <picture>
@@ -107,6 +110,17 @@
     <p class="dim reveal" style="margin-inline:auto">This collection is growing fast — more sessions land here after every weekend.<br>Want yours in it?</p>
     <p class="mt-2 reveal"><a class="btn" href="inquire.html">Book a couples session <span class="arrow">&rarr;</span></a></p>
   </section>
+  <a class="next-col" href="weddings.html">
+    <picture>
+      <source type="image/avif" srcset="assets/img/weddings/bride-groom-portrait-petal-ms-2400.avif 2400w, assets/img/weddings/bride-groom-portrait-petal-ms-1200.avif 1200w" sizes="100vw">
+      <img src="assets/img/weddings/bride-groom-portrait-petal-ms-2400.jpg" srcset="assets/img/weddings/bride-groom-portrait-petal-ms-2400.jpg 2400w, assets/img/weddings/bride-groom-portrait-petal-ms-1200.jpg 1200w" sizes="100vw"
+        width="11584" height="7722" loading="lazy" decoding="async" alt="">
+    </picture>
+    <div class="next-col__text">
+      <p class="eyebrow">Next collection</p>
+      <h2>N° 03 · Weddings <span class="arrow">&rarr;</span></h2>
+    </div>
+  </a>
 </main>
 
 <footer class="footer">

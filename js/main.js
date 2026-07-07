@@ -1,6 +1,11 @@
 /* JF — shared interactions: nav, cursor, reveals, preloader, magnetic buttons */
 (() => {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const saveData = navigator.connection && navigator.connection.saveData === true;
+
+  /* owner-maintained: keep this line TRUE — edit as dates book up */
+  const AVAILABILITY = 'Now booking fall ’26 seniors & 2027 weddings';
+  document.querySelectorAll('[data-avail]').forEach(el => { el.textContent = AVAILABILITY; });
 
   /* ----- preloader (first visit per session only) ----- */
   const pre = document.querySelector('.preloader');
@@ -106,8 +111,8 @@
       const r = v.getBoundingClientRect();
       const near = r.top < vh() + 240 && r.bottom > -240;
       if (near) {
-        if (!v.src) v.src = v.dataset.lazy;
-        if (!reduced && v.paused) v.play().catch(() => {});
+        if (!v.src && !saveData) v.src = v.dataset.lazy;
+        if (!reduced && v.src && v.paused) v.play().catch(() => {});
       } else if (!v.paused) {
         v.pause();
       }
@@ -116,6 +121,54 @@
     addEventListener('resize', checkVids, { passive: true });
     checkVids();
   }
+
+  /* ----- sticky mobile booking bar ----- */
+  const page = location.pathname.split('/').pop();
+  if (!['inquire.html', 'thanks.html'].includes(page)) {
+    const bar = document.createElement('div');
+    bar.className = 'bookbar';
+    bar.innerHTML = '<a class="btn btn--solid" href="inquire.html">Check my date <span class="arrow">&rarr;</span></a>' +
+      '<a class="btn" href="mailto:jkl81694@gmail.com">Email</a>';
+    document.body.append(bar);
+    const sentinel = document.querySelector('.hero, .video-hero, .banner, .page-hero');
+    const showBar = () => {
+      const r = sentinel.getBoundingClientRect();
+      bar.classList.toggle('is-on', r.bottom < 0);
+    };
+    if (sentinel) {
+      addEventListener('scroll', showBar, { passive: true });
+      showBar();
+    }
+  }
+
+  /* ----- hover video preview on collection cards ----- */
+  if (matchMedia('(pointer: fine)').matches && !reduced && !saveData) {
+    document.querySelectorAll('.card-vid').forEach(v => {
+      const host = v.closest('.col-card__media');
+      if (!host) return;
+      const start = () => {
+        if (!v.src) v.src = v.dataset.hoverSrc;
+        v.play().then(() => v.classList.add('is-playing')).catch(() => {});
+      };
+      const stop = () => { v.pause(); v.classList.remove('is-playing'); };
+      host.addEventListener('pointerenter', start);
+      host.addEventListener('pointerleave', stop);
+      host.addEventListener('focusin', start);
+      host.addEventListener('focusout', stop);
+    });
+  }
+
+  /* ----- film embed facade (activates when data-yt is set) ----- */
+  document.querySelectorAll('.film-embed[data-yt]').forEach(f => {
+    if (!f.dataset.yt || f.dataset.yt === 'VIDEO_ID') return;
+    const play = () => {
+      f.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${f.dataset.yt}?autoplay=1&rel=0"
+        allow="autoplay; fullscreen" allowfullscreen title="Wedding highlight film"
+        style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>`;
+    };
+    f.addEventListener('click', play, { once: true });
+    f.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); } });
+  });
 
   /* ----- current year ----- */
   document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());

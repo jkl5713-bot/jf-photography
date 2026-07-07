@@ -21,6 +21,22 @@ Pushing to `main` republishes GitHub Pages automatically (takes ~1 minute).
 git add -A && git commit -m "update" && git push
 ```
 
+## Owner-maintained lines (keep these true)
+
+- **Availability line** (pricing + inquire pages): edit the `AVAILABILITY`
+  constant at the top of `js/main.js` whenever dates book up.
+- **Watch-the-film**: upload your best highlight film to YouTube (unlisted is
+  fine), then in `tools/gen_pages.py` search for `WATCH-THE-FILM`, uncomment
+  the block, set `data-yt` to the video id, and regenerate. The player only
+  loads when clicked — the page stays fast.
+- **Testimonials**: the `.pullquote` component is built and styled. When a
+  client sends a quote, add a `<blockquote class="pullquote">` on pricing/
+  weddings/inquire. The form auto-reply already plants the seed.
+- **Sports ledger** (sports.html): add a row per new shoot — 60 seconds of
+  maintenance for a living résumé.
+- **Collection numbers are canon**: Seniors N° 01 · Couples N° 02 ·
+  Weddings N° 03 · Sports N° 04 · Aerial N° 05. Don't renumber.
+
 ## One thing left to activate
 
 The inquiry form posts to FormSubmit → **jkl81694@gmail.com**. The FIRST
