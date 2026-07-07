@@ -98,6 +98,25 @@
     if (track) t.append(track.cloneNode(true));
   });
 
+  /* ----- lazy background videos: fetch on approach, pause offscreen ----- */
+  const vids = [...document.querySelectorAll('video[data-lazy]')];
+  if (vids.length) {
+    const vh = () => Math.max(innerHeight, document.documentElement.clientHeight, 800);
+    const checkVids = () => vids.forEach(v => {
+      const r = v.getBoundingClientRect();
+      const near = r.top < vh() + 240 && r.bottom > -240;
+      if (near) {
+        if (!v.src) v.src = v.dataset.lazy;
+        if (!reduced && v.paused) v.play().catch(() => {});
+      } else if (!v.paused) {
+        v.pause();
+      }
+    });
+    addEventListener('scroll', checkVids, { passive: true });
+    addEventListener('resize', checkVids, { passive: true });
+    checkVids();
+  }
+
   /* ----- current year ----- */
   document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 })();

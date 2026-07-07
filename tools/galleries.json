@@ -3,13 +3,13 @@
     "alt": "Golden-hour serve toss at a Jones College tennis match in Ellisville, Mississippi" },
 
   "card-seniors": { "mode": "pic", "slug": "senior-session-strawberry-farm-laugh", "sizes": "(max-width: 800px) 96vw, 55vw" },
-  "card-couples": { "mode": "pic", "slug": "couple-golden-hour-boat-portrait", "sizes": "(max-width: 800px) 96vw, 55vw" },
+  "card-couples": { "mode": "pic", "slug": "couple-park-portrait-petal-ms", "sizes": "(max-width: 800px) 96vw, 55vw" },
   "card-weddings": { "mode": "pic", "slug": "bride-groom-portrait-petal-ms", "sizes": "(max-width: 800px) 96vw, 55vw" },
   "card-sports": { "mode": "pic", "slug": "college-football-quarterback-friday-night", "sizes": "(max-width: 800px) 96vw, 55vw" },
   "card-aerial": { "mode": "pic", "slug": "aerial-st-moritz-dawn-alps", "sizes": "(max-width: 800px) 96vw, 55vw" },
 
   "banner-seniors": { "mode": "pic", "slug": "senior-portrait-golden-hour-backlit", "sizes": "100vw", "eager": true },
-  "banner-couples": { "mode": "pic", "slug": "couple-golden-hour-boat-portrait", "sizes": "100vw", "eager": true },
+  "banner-couples": { "mode": "pic", "slug": "couple-park-portrait-petal-ms", "sizes": "100vw", "eager": true },
   "banner-weddings": { "mode": "pic", "slug": "bride-groom-portrait-petal-ms", "sizes": "100vw", "eager": true },
   "banner-sports": { "mode": "pic", "slug": "college-tennis-forehand-jones-college", "sizes": "100vw", "eager": true },
   "banner-about": { "mode": "pic", "slug": "marching-band-golden-hour", "sizes": "100vw", "eager": true },

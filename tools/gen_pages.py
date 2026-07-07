@@ -187,9 +187,9 @@ aerial = head(
 ) + "\n" + nav("aerial.html") + '''
 <main id="main">
   <section class="video-hero">
-    <video autoplay muted loop playsinline preload="metadata"
+    <video muted loop playsinline preload="none"
       poster="assets/video/aerial-loop-poster.jpg"
-      src="assets/video/aerial-loop.mp4" aria-hidden="true"></video>
+      data-lazy="assets/video/aerial-loop.mp4" aria-hidden="true"></video>
     <div class="wrap" style="padding-block:clamp(3rem,8vh,6rem)">
       <p class="eyebrow reveal">Aerial — photo &amp; film</p>
       <h1 class="reveal" style="font-size:var(--text-2xl);max-width:14ch">Above <em>everything</em>.</h1>
