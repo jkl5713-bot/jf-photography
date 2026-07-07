@@ -8,7 +8,7 @@ BASE = "https://jkl5713-bot.github.io/jf-photography"
 NAV_ITEMS = [("seniors.html", "Seniors"), ("couples.html", "Couples"),
              ("weddings.html", "Weddings"), ("sports.html", "Sports"),
              ("aerial.html", "Aerial"), ("about.html", "About"),
-             ("investment.html", "Investment"), ("inquire.html", "Inquire")]
+             ("pricing.html", "Pricing"), ("inquire.html", "Inquire")]
 
 
 def head(title, desc, fname=""):
@@ -71,7 +71,7 @@ FOOTER = '''<footer class="footer">
       <div class="footer__links">
         <a class="link-line" href="https://www.instagram.com/j.f.official" target="_blank" rel="noopener">Instagram</a>
         <a class="link-line" href="mailto:jkl81694@gmail.com">Email</a>
-        <a class="link-line" href="investment.html">Investment</a>
+        <a class="link-line" href="pricing.html">Pricing</a>
         <a class="link-line" href="inquire.html">Inquire</a>
       </div>
       <p>© <span data-year>2026</span> Juan Flores Photo &amp; Film</p>
@@ -155,7 +155,7 @@ gallery_page(
       <p class="eyebrow reveal">The film</p>
       <h2 class="reveal" style="font-size:var(--text-xl);max-width:26ch">Every collection includes a cinematic <em>highlight film</em> — and a vertical cut for the feed.</h2>
       <p class="mt-2 reveal" style="--d:.1s">Up to six continuous hours of coverage, one round of revisions, delivered digitally in three to four weeks. Add-ons: extended coverage, a full start-to-finish ceremony film, or the raw footage.</p>
-      <p class="mt-2 reveal" style="--d:.2s"><a class="btn" href="investment.html">See wedding collections <span class="arrow">&rarr;</span></a></p>
+      <p class="mt-2 reveal" style="--d:.2s"><a class="btn" href="pricing.html">See wedding collections <span class="arrow">&rarr;</span></a></p>
     </div>
   </section>
 ''')
@@ -261,15 +261,15 @@ about = head(
 open(os.path.join(ROOT, "about.html"), "w").write(about)
 print("wrote about.html")
 
-# ---------------- investment ----------------
-investment = head(
-    "Investment — Photography &amp; Film Collections | Juan Flores, Hattiesburg MS",
+# ---------------- pricing ----------------
+pricing = head(
+    "Pricing — Photography &amp; Film Collections | Juan Flores, Hattiesburg MS",
     "Transparent starting prices for senior sessions, couples, weddings, sports and drone work in Hattiesburg, Laurel and Ellisville, Mississippi.",
-    "investment.html"
-) + "\n" + nav("investment.html") + '''
+    "pricing.html"
+) + "\n" + nav("pricing.html") + '''
 <main id="main">
   <div class="wrap page-hero">
-    <p class="eyebrow reveal">Investment</p>
+    <p class="eyebrow reveal">Pricing</p>
     <h1 class="reveal">Priced like a person, <em>not a package machine</em>.</h1>
     <p class="lede reveal" style="--d:.15s">Every booking gets the same eye, the same care and the same turnaround promise. Here's where things start — your exact quote comes after we talk, and it never changes after we shake on it.</p>
   </div>
@@ -281,7 +281,7 @@ investment = head(
     <div class="tiers">
       <div class="tier reveal">
         <h3>The Highlight Film</h3>
-        <p class="price">$500 <small>WEDDING FILM</small></p>
+        <p class="price">$700 <small>WEDDING FILM</small></p>
         <ul>
           <li>Up to 6 continuous hours of coverage</li>
           <li>Cinematic 16:9 highlight film</li>
@@ -293,11 +293,11 @@ investment = head(
       </div>
       <div class="tier reveal" style="--d:.1s">
         <h3>Wedding photography</h3>
-        <p class="price">from $1,200 <small>PHOTO + FILM $1,600 — BEST VALUE</small></p>
+        <p class="price">from $1,100 <small>PHOTO + FILM $1,600 — BEST VALUE</small></p>
         <ul>
           <li>Six hours of wedding-day photography</li>
           <li>Fully edited online gallery with print rights</li>
-          <li>Add the Highlight Film for $400 — one storyteller, both crafts</li>
+          <li>Add the Highlight Film for $500 — one storyteller, both crafts</li>
           <li>Aerial coverage add-on from $200</li>
         </ul>
         <a class="btn btn--solid" href="inquire.html">Check my date</a>
@@ -351,8 +351,23 @@ investment = head(
   </section>
 </main>
 ''' + FOOTER
-open(os.path.join(ROOT, "investment.html"), "w").write(investment)
-print("wrote investment.html")
+open(os.path.join(ROOT, "pricing.html"), "w").write(pricing)
+print("wrote pricing.html")
+
+# old URL redirect: investment.html -> pricing.html
+redirect = '''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pricing | Juan Flores Photo &amp; Film</title>
+<meta http-equiv="refresh" content="0; url=pricing.html">
+<link rel="canonical" href="''' + BASE + '''/pricing.html">
+</head>
+<body><p>This page moved to <a href="pricing.html">pricing.html</a>.</p></body>
+</html>
+'''
+open(os.path.join(ROOT, "investment.html"), "w").write(redirect)
+print("wrote investment.html (redirect)")
 
 # ---------------- inquire ----------------
 inquire = head(

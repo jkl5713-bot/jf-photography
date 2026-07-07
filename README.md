@@ -28,17 +28,26 @@ submission emails that address an activation link — submit the form once and
 click it. After that, every inquiry lands in your inbox and the visitor is
 redirected to the thank-you page.
 
-## Pricing (set from 2026 market research — small-market MS comps)
+## Pricing (2026 market research floors, owner-adjusted; see pricing.html)
 
-- Wedding Highlight Film $500 (matches your signed contract)
-- Wedding photography from $1,200 / photo+film bundle $1,600
+- Wedding Highlight Film $700 (research floor was $500 — owner raised)
+- Wedding photography from $1,100 / photo+film bundle $1,600 (film add-on $500)
 - Portrait sessions (seniors/couples/grads) from $250
 - Athlete sessions from $150 · game coverage from $125/game
 - Real-estate aerials from $125 · land/farm from $150 · events from $200
 
 Research positioning note: these are launch floors. After the first ~5–10
 booked jobs and reviews, local comps support raising seniors/couples to ~$350
-and weddings to $1,500–1,800 base.
+and weddings to $1,500–1,800 base. `investment.html` redirects to
+`pricing.html` (page was renamed).
+
+## Photo & video look
+
+All portfolio images and the drone loop carry the "JF signature grade"
+(filmic S-curve, teal shadows, gold highlights, +5% vibrance, light unsharp)
+baked into `tools/process_images.py` — new photos get it automatically. It was
+tuned by a 3-judge review panel (skin tones, brand, technical QC). To disable:
+set `GRADE = False` in that file and rerun.
 
 ## Editing the site
 
