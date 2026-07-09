@@ -75,12 +75,23 @@ def head(title, desc, fname=""):
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <meta name="theme-color" content="#060f1b">
+<meta name="author" content="Juan Flores">
+<meta name="geo.region" content="US-MS">
+<meta name="geo.placename" content="Hattiesburg">
 <link rel="canonical" href="{page_url}">
+<meta property="og:site_name" content="Juan Flores Photo &amp; Film">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{page_url}">
 <meta property="og:image" content="{BASE}/assets/img/hero/golden-hour-tennis-serve-ellisville-ms-1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{desc}">
+<meta name="twitter:image" content="{BASE}/assets/img/hero/golden-hour-tennis-serve-ellisville-ms-1200.jpg">
 <link rel="icon" href="assets/brand/favicon.png">
 <link rel="apple-touch-icon" href="assets/brand/favicon.png">
 <link rel="preload" href="assets/fonts/fraunces-3.woff2" as="font" type="font/woff2" crossorigin>
@@ -105,11 +116,12 @@ def nav(current):
     <img src="assets/brand/jf-white.png" alt="JF monogram — Juan Flores Photo &amp; Film">
   </a>
   <nav aria-label="Primary">
-    <ul class="nav__links">
+    <ul class="nav__links" id="primary-nav">
 {lis}
     </ul>
   </nav>
-  <button class="nav__toggle" aria-expanded="false">Menu</button>
+  <a class="btn btn--solid nav__cta" href="inquire.html">Check date</a>
+  <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">Menu</button>
 </header>
 '''
 
@@ -121,6 +133,16 @@ FOOTER = '''<footer class="footer">
       <h2 class="reveal">Let's make something <em>worth keeping</em>.</h2>
       <p class="mt-2"><a class="btn btn--solid" href="inquire.html">Check my date <span class="arrow">&rarr;</span></a></p>
     </div>
+    <nav class="footer__map" aria-label="Site">
+      <a href="seniors.html">Seniors</a>
+      <a href="couples.html">Couples</a>
+      <a href="weddings.html">Weddings</a>
+      <a href="sports.html">Sports</a>
+      <a href="aerial.html">Aerial</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="inquire.html">Inquire</a>
+    </nav>
     <div class="footer__grid">
       <img src="assets/brand/jf-white.png" alt="JF monogram">
       <p>Serving Hattiesburg · Laurel · Ellisville<br>the Gulf South &amp; anywhere the story goes</p>

@@ -6,12 +6,23 @@
 <title>Hattiesburg MS Photographer &amp; Videographer | Juan Flores Photo &amp; Film</title>
 <meta name="description" content="Senior portraits, couples, weddings, sports and drone photography across Hattiesburg, Laurel and Ellisville, Mississippi. Stories of light and motion by Juan Flores.">
 <meta name="theme-color" content="#060f1b">
+<meta name="author" content="Juan Flores">
+<meta name="geo.region" content="US-MS">
+<meta name="geo.placename" content="Hattiesburg">
 <link rel="canonical" href="https://jkl5713-bot.github.io/jf-photography/">
+<meta property="og:site_name" content="Juan Flores Photo &amp; Film">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="Juan Flores Photo &amp; Film — Stories of Light &amp; Motion">
 <meta property="og:description" content="Senior portraits, couples, weddings, sports and aerial across South Mississippi.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jkl5713-bot.github.io/jf-photography/">
 <meta property="og:image" content="https://jkl5713-bot.github.io/jf-photography/assets/img/hero/golden-hour-tennis-serve-ellisville-ms-1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Juan Flores Photo &amp; Film — Stories of Light &amp; Motion">
+<meta name="twitter:description" content="Senior portraits, couples, weddings, sports and aerial across South Mississippi.">
+<meta name="twitter:image" content="https://jkl5713-bot.github.io/jf-photography/assets/img/hero/golden-hour-tennis-serve-ellisville-ms-1200.jpg">
 <link rel="icon" href="assets/brand/favicon.png">
 <link rel="apple-touch-icon" href="assets/brand/favicon.png">
 <link rel="preload" href="assets/fonts/fraunces-3.woff2" as="font" type="font/woff2" crossorigin>
@@ -24,15 +35,46 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "ProfessionalService"],
   "name": "Juan Flores Photo & Film",
+  "alternateName": "JF Photo & Film",
   "url": "https://jkl5713-bot.github.io/jf-photography/",
   "image": "https://jkl5713-bot.github.io/jf-photography/assets/brand/jf-blue-gold.jpg",
+  "logo": "https://jkl5713-bot.github.io/jf-photography/assets/brand/jf-white.png",
   "email": "jkl81694@gmail.com",
   "sameAs": ["https://www.instagram.com/j.f.official"],
   "priceRange": "$$",
-  "areaServed": ["Hattiesburg MS", "Laurel MS", "Ellisville MS", "Petal MS", "Jones County MS"],
-  "description": "Senior portrait, couples, wedding, sports and drone photography and videography serving Hattiesburg, Laurel and Ellisville, Mississippi."
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Cash, Check, Venmo, Zelle, Cash App, PayPal, Apple Pay",
+  "areaServed": [
+    {"@type": "City", "name": "Hattiesburg", "containedInPlace": {"@type": "State", "name": "Mississippi"}},
+    {"@type": "City", "name": "Laurel", "containedInPlace": {"@type": "State", "name": "Mississippi"}},
+    {"@type": "City", "name": "Ellisville", "containedInPlace": {"@type": "State", "name": "Mississippi"}},
+    {"@type": "City", "name": "Petal", "containedInPlace": {"@type": "State", "name": "Mississippi"}}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Hattiesburg",
+    "addressRegion": "MS",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 31.3271,
+    "longitude": -89.2903
+  },
+  "description": "Senior portrait, couples, wedding, sports and drone photography and videography serving Hattiesburg, Laurel and Ellisville, Mississippi.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Photography & Film Collections",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Senior portrait sessions"}, "priceSpecification": {"@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": "250"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wedding photography"}, "priceSpecification": {"@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": "1100"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wedding highlight film"}, "priceSpecification": {"@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": "700"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sports game coverage"}, "priceSpecification": {"@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": "125"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Aerial drone photography"}, "priceSpecification": {"@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": "125"}}
+    ]
+  }
 }
 </script>
 </head>
@@ -46,7 +88,7 @@
     <img src="assets/brand/jf-white.png" alt="JF monogram — Juan Flores Photo &amp; Film">
   </a>
   <nav aria-label="Primary">
-    <ul class="nav__links">
+    <ul class="nav__links" id="primary-nav">
       <li><a href="seniors.html">Seniors</a></li>
       <li><a href="couples.html">Couples</a></li>
       <li><a href="weddings.html">Weddings</a></li>
@@ -57,7 +99,8 @@
       <li><a href="inquire.html">Inquire</a></li>
     </ul>
   </nav>
-  <button class="nav__toggle" aria-expanded="false">Menu</button>
+  <a class="btn btn--solid nav__cta" href="inquire.html">Check date</a>
+  <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">Menu</button>
 </header>
 
 <main id="main">
@@ -120,6 +163,7 @@
       <span class="badge">Photo + video, one shooter</span>
       <span class="badge">Drone photo &amp; film</span>
     </div>
+    <p class="avail reveal mt-2"><span class="avail__dot" aria-hidden="true"></span><span data-avail></span></p>
     <p class="dim mt-2 reveal" style="font-size:var(--text-sm);letter-spacing:.04em">Portrait sessions from $250 · Wedding photography from $1,100 · Films from $700 · Aerial from $125 — <a class="link-line" href="pricing.html">see full pricing</a></p>
   </section>
 
@@ -219,6 +263,17 @@
         </div>
       </article>
 
+    </div>
+  </section>
+
+  <!-- ============ MID CTA ============ -->
+  <section class="cta-band wrap" aria-label="Book a session">
+    <p class="eyebrow reveal" style="justify-content:center">Dates fill first</p>
+    <h2 class="reveal">Your light is waiting — <em>let's hold the date</em>.</h2>
+    <div class="reveal" style="--d:.15s">
+      <a class="btn btn--solid" href="inquire.html">Check my date <span class="arrow">&rarr;</span></a>
+      &nbsp;&nbsp;
+      <a class="btn" href="pricing.html">See pricing</a>
     </div>
   </section>
 
@@ -337,6 +392,16 @@
       <h2 class="reveal">Let's make something <em>worth keeping</em>.</h2>
       <p class="mt-2"><a class="btn btn--solid" href="inquire.html">Check my date <span class="arrow">&rarr;</span></a></p>
     </div>
+    <nav class="footer__map" aria-label="Site">
+      <a href="seniors.html">Seniors</a>
+      <a href="couples.html">Couples</a>
+      <a href="weddings.html">Weddings</a>
+      <a href="sports.html">Sports</a>
+      <a href="aerial.html">Aerial</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="inquire.html">Inquire</a>
+    </nav>
     <div class="footer__grid">
       <img src="assets/brand/jf-white.png" alt="JF monogram">
       <p>Serving Hattiesburg · Laurel · Ellisville<br>the Gulf South &amp; anywhere the story goes</p>
